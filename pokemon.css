@@ -19,6 +19,11 @@ h1{
 }
 
 .BattleArena > div{
-    font-size: 30;
-    padding: 12vw;
+    border: 20px  darkslategrey;
+    box-shadow: 10px 10px 5px black; 
+    font-size: 45;
+  margin-left: 20vw;
+  margin-right: 20vw;
+    margin-top: 10px;
+    background: white;
 }

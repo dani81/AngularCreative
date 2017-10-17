@@ -14,10 +14,10 @@
   <div id="pikachu">
     <img src="https://i.pinimg.com/originals/df/f6/02/dff6029819c10db2e203140e1040bab7.gif" alt="Ash Picture">
   </div>
-  <form ng-submit="AddPokemon()"> Build Team: 
+  <form ng-submit="AddPokemon()"> Build Team:
     <select name="Team" id="teamSelector">
-    <option value="1">Team One</option>
-    <option value="2">Team Two</option>
+      <option value="1">Left Team</option>
+      <option value="2">Right Team</option>
     </select>
 
     <select name="Pokemon" id="pokemonSelector">
@@ -26,13 +26,13 @@
       <option value="squirtle">Squirtle</option>
     </select>
 
-<select name="position" id="positionSelector">
-  <option value="0">Slot 1 :</option>
-  <option value="1">Slot 2 :</option>
-  <option value="2">Slot 3 :</option>
-</select>
+    <select name="position" id="positionSelector">
+      <option value="0">Slot 1</option>
+      <option value="1">Slot 2</option>
+      <option value="2">Slot 3</option>
+    </select>
 
-<button type="submit">Add Pokemon</button>
+    <button type="submit">Add Pokemon</button>
   </form>
   <div class="BattleArena">
     <div>Left Team
