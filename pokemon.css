@@ -5,12 +5,12 @@ body{
     align-items: center;
     background-image: url("Pokeball.png");
     flex-wrap: wrap;
-    text-shadow: 2px 2px #ff0000;
+    text-shadow: 2px 2px white;
 }
 
 h1{
     color: green;
-    text-shadow: 2px 2px #ff0000;
+    text-shadow: 2px 2px white;
 }
 
 .BattleArena{
