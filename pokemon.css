@@ -1,1 +1,24 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("Pokeball.png");
+    flex-wrap: wrap;
+}
 
+h1{
+    color: green;
+}
+
+.BattleArena{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.BattleArena > div{
+    font-size: 30;
+    padding: 12vw;
+}
