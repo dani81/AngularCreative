@@ -15,18 +15,18 @@
     <img src="https://i.pinimg.com/originals/df/f6/02/dff6029819c10db2e203140e1040bab7.gif" alt="Ash Picture">
   </div>
   <form ng-submit="AddPokemon()"> Build Team:
-    <select name="Team" id="teamSelector">
+    <select name="Team" id="teamSelector" ng-model="team">
       <option value="1">Left Team</option>
       <option value="2">Right Team</option>
     </select>
 
-    <select name="Pokemon" id="pokemonSelector">
+    <select name="Pokemon" id="pokemonSelector" ng-model="pokemon">
       <option value="bulbasaur">Bulbasaur</option>
       <option value="charmander">Charmander</option>
       <option value="squirtle">Squirtle</option>
     </select>
 
-    <select name="position" id="positionSelector">
+    <select name="position" id="positionSelector" ng-model="position">
       <option value="0">Slot 1</option>
       <option value="1">Slot 2</option>
       <option value="2">Slot 3</option>
