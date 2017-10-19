@@ -6,6 +6,7 @@ body{
     background-image: url("Pokeball.png");
     flex-wrap: wrap;
     text-shadow: 2px 2px white;
+    font-weight: bold;
 }
 
 h1{
