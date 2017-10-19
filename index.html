@@ -52,16 +52,22 @@
   </form>
   <div class="BattleArena">
     <div>Left Team
-       <div ng-repeat="post in posts">
+      <div ng-repeat="post in teamOne">
         <span class="glyphicon glyphicons-star"></span>
         {{post.title}} - Name: {{post.pokemonName}}
         <br>
         <img src={{post.picture}}>
-         <br><br>
-</div>
+        <br><br>
+      </div>
     </div>
     <div>Right Team
-
+      <div ng-repeat="post in teamTwo">
+        <span class="glyphicon glyphicons-star"></span>
+        {{post.title}} - Name: {{post.pokemonName}}
+        <br>
+        <img src={{post.picture}}>
+        <br><br>
+      </div>
     </div>
   </div>
 </body>
