@@ -37,8 +37,8 @@
   <form ng-submit="addPokemon()" style = "margin-top30px;">
     
     <select name="Team" id="teamSelector" ng-model="team">
-      <option value="Team 1">Team 1</option>
-      <option value="Team 2">Team 2</option>
+      <option value="Team 1">Team One</option>
+      <option value="Team 2">Team Two</option>
     </select>
     
     <h3>Add a new pokemon</h3>
@@ -51,7 +51,7 @@
     <button type="submit">Add Pokemon</button>
   </form>
   <div class="BattleArena">
-    <div>Left Team
+    <div>Team One
       <div ng-repeat="post in teamOne">
         <span class="glyphicon glyphicons-star"></span>
         {{post.title}} - Name: {{post.pokemonName}}
@@ -60,7 +60,7 @@
         <br><br>
       </div>
     </div>
-    <div>Right Team
+    <div>Team Two
       <div ng-repeat="post in teamTwo">
         <span class="glyphicon glyphicons-star"></span>
         {{post.title}} - Name: {{post.pokemonName}}
