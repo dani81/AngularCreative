@@ -6,12 +6,12 @@ body{
     background-image: url("Pokeball.png");
     flex-wrap: wrap;
     text-shadow: 2px 2px white;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 h1{
     color: green;
-    text-shadow: 2px 2px white;
+    text-shadow: 4px 4px white;
 }
 
 .BattleArena{
@@ -29,5 +29,5 @@ h1{
     margin-right: 20vw;
     margin-top: 10px;
     background: white;
-    font-weight: bold;
+    font-weight: 600;
 }
