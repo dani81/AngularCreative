@@ -13,7 +13,7 @@ angular.module('pokemonBattle', [])
           pokemonName: $scope.pokemon,
           picture: $scope.pokemon + ".png"
         });
-       console.log("here3");
+       console.log("Team1");
        console.log($scope.teamOne[0]);
        }
        else{
@@ -22,7 +22,7 @@ angular.module('pokemonBattle', [])
           pokemonName: $scope.pokemon,
           picture: $scope.pokemon + ".png"
         });
-       console.log("here3");
+       console.log("Team2");
        console.log($scope.teamTwo[0]);
        }
       };
