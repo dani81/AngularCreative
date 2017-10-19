@@ -44,9 +44,9 @@
     
     <h2>Add a new pokemon</h2>
     <select name="Pokemon" id="pokemonSelector" ng-model="pokemon">
-      <option value="bulbasaur">Bulbasaur</option>
-      <option value="charmander">Charmander</option>
-      <option value="squirtle">Squirtle</option>
+      <option value="Bulbasaur">Bulbasaur</option>
+      <option value="Charmander">Charmander</option>
+      <option value="Squirtle">Squirtle</option>
     </select>
 
     <button type="submit">Add Pokemon</button>
@@ -54,7 +54,7 @@
   <div class="BattleArena">
     <div>
       <div ng-repeat="post in teamOne">
-        <span class="glyphicon glyphicons-star"></span>
+        <span class="glyphicon glyphicons-dashboard"></span>
         {{post.title}} - {{post.pokemonName}}
         <br>
         <img src={{post.picture}}>
