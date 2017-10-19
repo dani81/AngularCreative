@@ -10,7 +10,7 @@
   </head>
 
 <body ng-app="pokemonBattle" ng-controller="MainCtrl">
-  <h1>
+  <h1 id="pageTitle">
     Pokemon Dream Team Builder!
   </h1>
   <div id="pikachu" style="box-shadow: 10px 10px 5px black;">
@@ -36,13 +36,13 @@
   
   <form ng-submit="addPokemon()" style = "margin-top: 30px;">
     <br>
-    <h2>Build Team:</h2>
+    <h2 id="buildOptions" >Build Team:</h2>
     <select name="Team" id="teamSelector" ng-model="team">
       <option value="Team 1">Team One</option>
       <option value="Team 2">Team Two</option>
     </select>
     
-    <h2>Add a new pokemon</h2>
+    <h2 id="buildOptions" >Add a new pokemon</h2>
     <select name="Pokemon" id="pokemonSelector" ng-model="pokemon">
       <option value="Bulbasaur">Bulbasaur</option>
       <option value="Charmander">Charmander</option>
