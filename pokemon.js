@@ -9,7 +9,7 @@ angular.module('pokemonBattle', [])
         console.log($scope.pokemon);
        if($scope.team == "Team 1"){
           $scope.teamOne.push({
-          title: $scope.team,
+          
           pokemonName: $scope.pokemon,
           picture: "pictures/" + $scope.pokemon + ".png"
         });
@@ -18,7 +18,7 @@ angular.module('pokemonBattle', [])
        }
        else{
         $scope.teamTwo.push({
-          title: $scope.team,
+          
           pokemonName: $scope.pokemon,
           picture: "pictures/" + $scope.pokemon + ".png"
         });

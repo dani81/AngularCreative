@@ -11,7 +11,7 @@
 
 <body ng-app="pokemonBattle" ng-controller="MainCtrl">
   <h1>
-    Pokemon Battle!
+    Pokemon Dream Team Builder!
   </h1>
   <div id="pikachu">
     <img src="https://i.pinimg.com/originals/df/f6/02/dff6029819c10db2e203140e1040bab7.gif" alt="Ash Picture">
@@ -54,8 +54,8 @@
   <div class="BattleArena">
     <div>
       <div ng-repeat="post in teamOne">
-        <span class="glyphicon glyphicons-dashboard"></span>
-        {{post.title}} - {{post.pokemonName}}
+       
+        {{post.pokemonName}}
         <br>
         <img src={{post.picture}}>
         <br><br>
@@ -63,8 +63,8 @@
     </div>
     <div>
       <div ng-repeat="post in teamTwo">
-        <span class="glyphicon glyphicon-dashboard"></span>
-        {{post.title}} - {{post.pokemonName}}
+        
+       {{post.pokemonName}}
         <br>
         <img src={{post.picture}}>
         <br><br>
