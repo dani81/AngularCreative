@@ -11,7 +11,7 @@ angular.module('pokemonBattle', [])
           $scope.teamOne.push({
           title: $scope.team,
           pokemonName: $scope.pokemon,
-          picture: $scope.pokemon + ".png"
+          picture: "images/" + $scope.pokemon + ".png"
         });
        console.log("Team1");
        console.log($scope.teamOne[0]);
@@ -20,7 +20,7 @@ angular.module('pokemonBattle', [])
         $scope.teamTwo.push({
           title: $scope.team,
           pokemonName: $scope.pokemon,
-          picture: $scope.pokemon + ".png"
+          picture: "images/" + $scope.pokemon + ".png"
         });
        console.log("Team2");
        console.log($scope.teamTwo[0]);
