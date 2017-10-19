@@ -7,7 +7,7 @@ angular.module('pokemonBattle', [])
      $scope.teamTwo = [];
       $scope.addPokemon = function(){
         console.log($scope.pokemon);
-       if($scope.team = "Team 1"){
+       if($scope.team == "Team 1"){
           $scope.teamOne.push({
           title: $scope.team,
           pokemonName: $scope.pokemon,
