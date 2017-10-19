@@ -33,15 +33,19 @@
       <option value="2">Slot 3</option>
     </select> -->
   
-  <form ng-submit="addPokemon()" 
-        style = "margin-top30px;">
-        <h3>Add a new pokemon</h3>
-
-        <select name="Pokemon" id="pokemonSelector" ng-model="pokemon">
-          <option value="bulbasaur">Bulbasaur</option>
-          <option value="charmander">Charmander</option>
-          <option value="squirtle">Squirtle</option>
-  </select>
+  <form ng-submit="addPokemon()" style = "margin-top30px;">
+    
+    <select name="Team" id="teamSelector" ng-model="team">
+      <option value="Team 1">Left Team</option>
+      <option value="Team 2">Right Team</option>
+    </select>
+    
+    <h3>Add a new pokemon</h3>
+    <select name="Pokemon" id="pokemonSelector" ng-model="pokemon">
+      <option value="bulbasaur">Bulbasaur</option>
+      <option value="charmander">Charmander</option>
+      <option value="squirtle">Squirtle</option>
+    </select>
 
     <button type="submit">Add Pokemon</button>
   </form>
