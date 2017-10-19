@@ -7,7 +7,7 @@ angular.module('pokemonBattle', [])
       $scope.addPokemon = function(){
         console.log($scope.pokemon);
           $scope.posts.push({
-          title: "someTitle",
+          title: $scope.team,
           pokemonName: $scope.pokemon,
           picture: $scope.pokemon + ".png"
         });
