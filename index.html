@@ -1,10 +1,11 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="pokemon.css">
-  <script src="pokemon.js" type="text/javascript"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
   <script src="pokemon.js"></script>
+  <link rel="stylesheet" href="pokemon.css">
+  <title>Pokemon Team</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
 </head>
 
 <body ng-app="pokemonBattle" ng-controller="MainCtrl">
@@ -14,7 +15,7 @@
   <div id="pikachu">
     <img src="https://i.pinimg.com/originals/df/f6/02/dff6029819c10db2e203140e1040bab7.gif" alt="Ash Picture">
   </div>
-  <form ng-submit="AddPokemon()"> Build Team:
+  <!-- <form ng-submit="AddPokemon()"> Build Team:
     <select name="Team" id="teamSelector" ng-model="team">
       <option value="1">Left Team</option>
       <option value="2">Right Team</option>
@@ -30,13 +31,28 @@
       <option value="0">Slot 1</option>
       <option value="1">Slot 2</option>
       <option value="2">Slot 3</option>
-    </select>
+    </select> -->
+  
+  <form ng-submit="addPokemon()" 
+        style = "margin-top30px;">
+        <h3>Add a new pokemon</h3>
+
+        <select name="Pokemon" id="pokemonSelector" ng-model="pokemon">
+          <option value="bulbasaur">Bulbasaur</option>
+          <option value="charmander">Charmander</option>
+          <option value="squirtle">Squirtle</option>
+  </select>
 
     <button type="submit">Add Pokemon</button>
   </form>
   <div class="BattleArena">
     <div>Left Team
-
+       <div ng-repeat="post in posts">
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+        {{post.title}} - Name: {{post.pokemonName}}
+        <br><br>
+        <img src={{post.picture}}>
+</div>
     </div>
     <div>Right Team
 
